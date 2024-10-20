@@ -6,9 +6,12 @@
     <title>HopGoat Journey</title>
     <style>
         body {
-            background-color: white;
+            background-color: white; /* Fallback color */
             font-family: Arial, sans-serif;
-            background-image: url('image.jpg');
+            background-image: url('image.jpg'); /* Path to your background image */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
             margin: 0;
             padding: 0;
         }
@@ -31,7 +34,7 @@
             display: flex; /* Use flexbox to position items */
             align-items: center; /* Center vertically */
             height: 400px; /* Fixed height for the hero section */
-            background-color: #4bb475; /* Set the background color */
+            background-color: rgba(75, 182, 117, 0.8); /* Set a semi-transparent background color */
             overflow: hidden; /* Prevent overflow of image */
             flex-direction: row; /* Default layout */
         }
